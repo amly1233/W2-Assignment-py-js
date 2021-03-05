@@ -36,7 +36,7 @@ avg({
 print("--------------------")
 # 要求三:找出至少包含兩筆整數的列表 (Python)中，兩兩數字相乘後的最大值。
 def maxProduct(nums):
-    max=0
+    max=nums[0]*nums[1]
     for i in range(len(nums)-1):
         for k in range(i+1,len(nums)):       
             if (nums[i]*nums[k]>max):
