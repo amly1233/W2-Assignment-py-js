@@ -39,7 +39,7 @@ avg({
 
 //要求三:找出至少包含兩筆整數的陣列 (JavaScript) 中，兩兩數字相乘後的最大值。
 function maxProduct(nums){
-  max=0;
+  max=nums[0]*nums[1];
   for(var i=0;i<nums.length-1;i++){
     for(var k=i+1;k<nums.length;k++){
       if(nums[i]*nums[k]>max){
